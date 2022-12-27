@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julius Gando</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1'css/all.css">
+    <script src="https://kit.fontawesome.com/8851734ee4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+    <div id="header">
+        <div class="container">
+            <nav class="nav">
+                <img src="images/Logo.png" class="Logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <a href="#contact"><button type="button">Contact</button></a>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <br><br><p>Welcome!</p><br>
+                <h3>Hi I'm <span>Julius Gando</span>,</h3>
+                <h2><span class="input"></span></h2><br><br><br>
+            </div>
+            <div>
+                <a href="docs/CV.pdf" download><button type="button">Download CV</button></a>
+            </div>
+            
+        </div>
+    </div>
+
+    <!----------------------About Me----------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/About Me.png">
+                </div>
+                <div class="about-col-2">
+                    <h2 class="sub-title">About Me</h2><br>
+                    <p>Hi there! My name is Julius Gando, 20 years old. I am a college student taking Bachelor of
+                        Science in Information Technology at Sorsogon State University - Bulan Campus. I am interested in
+                        this field because I enjoy exploring and studying parts and features of
+                        devices and also I want to develop and make my own website.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Microsoft Office</span><br>Word, Excel, Powerpoint</li>
+                            <li><span>Web Development</span><br>Designing Web Interfaces</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>(Tertiary) 2020 - Present</span><br>Sorsogon State University - Bulan Campus</li>
+                            <li><span>(Secondary) 2013 - 2020</span><br>Bulusan National High School</li>
+                            <li><span>(Elementary) 2007 - 2013</span><br>Bulusan Central School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------------Portfolio-------------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h2 class="sub-title">Portfolio</h2><br>
+            <h4>Projects:</h4>
+            <div class="project-list">
+                <div>
+                    <i class="fa-brands fa-github"></i><br>
+                    <h1><em>Note App</em></h1><br>
+                    <a href="https://github.com/Julius-14/Note-App.git" target="_blank"><span>See More</span></a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-github"></i><br>
+                    <h1><em>Chat App</em></h1><br>
+                    <a href="https://github.com/Julius-14/Chat-App" target="_blank"><span>See More</span></a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-github"></i><br>
+                    <h1><em>Weather App</em></h1><br>
+                    <a href="https://github.com/Julius-14/Weather-App.git" target="_blank"><span>See More</span></a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-figma"></i>
+                    <h1><em>Portfolio Design</em></h1><br>
+                    <a href="https://www.figma.com/file/lQ9KsbyUlJVFR72nFrHaIi/PORTFOLIO%2FJulius-Gando?t=cl0YBfB2pOXWZgH7-6"
+                        target="_blank"><span>See More</span></a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h1><em>Portfolio Website</em></h1><br>
+                    <a href="https://github.com/Julius-14/Website-Portfolio.git" target="_blank"><span>See More</span></a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!---------------------------Contact------------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h2 class="sub-title">Contact Me</h2>
+                    <p><i class="fa-regular fa-paper-plane"></i> juliusgando2@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> +639674323538</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/julius.gando.1" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="m.me/julius.gando.1" target="_blank"><i class="fa-brands fa-facebook-messenger"></i></a>
+                        <a href="https://github.com/Julius-14" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Full Name" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright ©️ Julius Gando 2022</p>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".input", {
+            strings: ["an Information Technology student.", "a Web Developer.", "a Programmer."],
+            typespeed: 70,
+            backspeed: 60,
+            loop: true
+        });
+    </script>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby2broivcbQz3tkZ8TNcPyDsS0PwnlEgfMd5v37alLbRLJQKcbxz1XUHod1FHfp-bF7gw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+      <script>
+
+        var sidemenu = document.getElementById("sidemenu")
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+      </script>
+      <a class="gotopbtn" href="#"><i class="fas fa-arrow-up"></i></a>
+</body>
+
+</html>
